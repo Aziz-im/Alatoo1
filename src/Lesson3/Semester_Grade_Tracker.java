@@ -60,7 +60,7 @@ public class Semester_Grade_Tracker {
                         System.out.println("Exams completed: " + exCount);
                         System.out.println("Exam average: " + examAvg);
                         System.out.println("Overall average: " + overallAverage);
-                        if (overallAverage >= 90 && overallAverage <= 100) {
+                        if (overallAverage >= 90 ) {
                             System.out.println("Grade: A");
                             ch = 'A';
                         } else if (overallAverage >= 80 && overallAverage < 90) {
@@ -71,7 +71,7 @@ public class Semester_Grade_Tracker {
                             ch = 'C';
                         } else if (overallAverage >= 60 && overallAverage < 70) {
                             ch = 'D';
-                        } else {
+                        } else if(overallAverage < 60) {
                             System.out.println("Grade: F");
                             ch = 'F';
                         }
