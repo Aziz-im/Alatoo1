@@ -85,9 +85,5 @@ public class Screen_Time_Tracker {
                 }
             }
         }
-
-
     }
-
-
 }
