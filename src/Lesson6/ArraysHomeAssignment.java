@@ -109,7 +109,7 @@ public class ArraysHomeAssignment {
 
 
     void main(String[] args){
-        duplicate();
+        remove();
     }
 
 }
