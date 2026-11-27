@@ -1,8 +1,10 @@
 package Lesson7;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Classwork1 {
+    static Scanner sc = new Scanner(System.in);
 
     static void task1(){
         int[] a = {4,7,9,2,5,8,1,6};
@@ -26,9 +28,13 @@ public class Classwork1 {
     }
 
     static void task3(){
-        int[] a = {9,10,17,25,20,3,11,30};
+        int[] a = new int[8];
         byte count = 0;
 
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Enter a[" + i + "]: ");
+            a[i] = sc.nextInt();
+        }
         for (int i = 0; i < a.length; i++) {
             if(a[i] >=10 && a[i] <= 20) count++;
         }
@@ -121,6 +127,6 @@ public class Classwork1 {
     }
 
     void main(String[] args){
-        task10();
+        task3();
     }
 }
